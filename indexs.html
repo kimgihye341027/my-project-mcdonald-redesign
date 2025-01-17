@@ -25,14 +25,20 @@
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="맥도날드 리디자인 웹사이트입니다." />
     <!-- fivicon적용 -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
     <!-- css 연결 -->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- js연결 -->
+    <!-- jquery연결 -->
+     <script src="js/jquery-1.12.3.js"></script>
+    <!-- js파일연결 -->
+    <script src="js/style.js"></script>
+
     <title>맥도날드 리디자인</title>
   </head>
   <body>
@@ -41,58 +47,63 @@
     <div class="container">
       <!-- header -->
       <header class="header">
+        <!-- 상단라인 -->
+        <div class="line">
+          <p>우리가 엄격해질수록 버거는 더 맛있어지니까!</p>
+        </div>
         <div class="header-inner">
-            <!-- 상단라인 -->
-            <div class="line"></div>
-            <div class="logo"></div>
-            <!-- 메뉴 -->
-            <div class="nav">
-                <ul class="gnb">
-                    <li>
-                        <a href="#">Menu</a>
-                        <ul class="depth2">
-                            <li><a href="#">버거</a></li>
-                            <li><a href="#">맥런치</a></li>
-                            <li><a href="#">맥모닝</a></li>
-                            <li><a href="#">해피스낵</a></li>
-                            <li><a href="#">사이드&디저트</a></li>
-                            <li><a href="#">맥카페&음료</a></li>
-                            <li><a href="#">해피밀</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Store</a>
-                        <ul class="depth2">
-                            <li><a href="#">매장찾기</a></li>
-                            <li><a href="#">맥딜리버리</a></li>
-                            <li><a href="#">맥드라이브</a></li>
-                            <li><a href="#">임차문의</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Promotion</a>
-                        <ul class="depth2">
-                            <li><a href="#">프로모션</a></li>
-                            <li><a href="#">새로운 소식</a></li>
-                            <li><a href="#">이달의 해피밀</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Brand Story</a>
-                        <ul class="depth2">
-                            <li><a href="#">브랜드 소개</a></li>
-                            <li><a href="#">사회적 책임과 지원</a></li>
-                            <li><a href="#">맥도날드 품질 이야기</a></li>
-                            <li><a href="#">맥도날드 사람들</a></li>
-                        </ul>
-                    </li>
+          <!-- 로고 -->
+          <div class="logo">
+            <a href="#indexs.html"><img src="images/icon.logo.png" alt="로고" /></a>
+          </div>
+          <!-- 메뉴 -->
+          <div class="nav">
+            <ul class="gnb">
+              <li>
+                <a href="#">Menu</a>
+                <ul class="depth2">
+                  <li><a href="#">버거</a></li>
+                  <li><a href="#">맥런치</a></li>
+                  <li><a href="#">맥모닝</a></li>
+                  <li><a href="#">해피스낵</a></li>
+                  <li><a href="#">사이드&디저트</a></li>
+                  <li><a href="#">맥카페&음료</a></li>
+                  <li><a href="#">해피밀</a></li>
                 </ul>
-            </div>
-            <!-- 버튼 -->
-            <div class="butten-group">
-                <button class="store">입점문의</button>
-                <button class="eng">ENG</button>
-            </div>
+              </li>
+              <li>
+                <a href="#">Store</a>
+                <ul class="depth2">
+                  <li><a href="#">매장찾기</a></li>
+                  <li><a href="#">맥딜리버리</a></li>
+                  <li><a href="#">맥드라이브</a></li>
+                  <li><a href="#">임차문의</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Promotion</a>
+                <ul class="depth2">
+                  <li><a href="#">프로모션</a></li>
+                  <li><a href="#">새로운 소식</a></li>
+                  <li><a href="#">이달의 해피밀</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Brand Story</a>
+                <ul class="depth2">
+                  <li><a href="#">브랜드 소개</a></li>
+                  <li><a href="#">사회적 책임과 지원</a></li>
+                  <li><a href="#">맥도날드 품질 이야기</a></li>
+                  <li><a href="#">맥도날드 사람들</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- 버튼 -->
+          <div class="butten-group">
+            <a href="#" class="store">입점문의</a>
+            <a href="#" class="eng">ENG</a>
+          </div>
         </div>
       </header>
       <!-- main -->

@@ -1,16 +1,133 @@
 @charset "utf-8";
+ul, li {
+    list-style: none;
+    text-decoration: none;
+}
 /* =========전체레이아웃======== */
 .container{
-    width: 1920px;
-    margin: auto;
 }
 /* =========header======== */
 .header{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+    /* overflow: hidden; */
+    transition: all 0.5s;
+    margin: auto;
+    background-color: antiquewhite;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 120px;
     box-shadow: 5px 15px 30px rgba(50, 50, 50, 0.05);
-    background-color: antiquewhite;
 }
+.header::after{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    box-shadow: 5px 15px 30px rgba(50, 50, 50, 0.05);
+    background-color: rgb(164, 137, 102);
+}
+.line{
+    width: 100%;
+    height: 30px;
+    background-color: #FFC72C;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    z-index: 9999;
+}
+/* ===header-inner=== */
+.header-inner{
+    position: relative;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    max-width: 1055px;
+    gap: 50px;
+    z-index: 1;
+    margin: auto;
+}
+/* 로고 */
+.header-inner > .logo img{
+    width: 60px;
+    height: 60px;
+}
+/* 메뉴 */
+.nav{
+    position: relative;
+    width: 60%;
+}
+.nav >.gnb{
+    margin: auto;
+    display: flex; 
+    gap: 24px;             
+    justify-content: space-evenly;
+    width: 100%;   
+    height: 120px;              
+}
+.gnb > li:hover > a{
+    color: #DA291C; 
+}
+.gnb > li > a {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 80px;
+  }
+
+/* depth2 */
+.depth2 , .header::after{
+    display: none;
+
+}
+.depth2 > li:hover > a{
+    color: #DA291C; 
+}
+.depth2 > li > a {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+/* 버튼 */
+.butten-group{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    display: flex;
+    gap: 20px;
+}
+.butten-group> .store{
+    width: 110px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 22px;
+    background-color: #DA291C;
+}
+.butten-group> .eng{
+    width: 110px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 22px;
+    background-color: #264A36;
+}
+
 
 
 /* =========main======== */
